@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: search-admin-app
+  profiles:
+    active: dev3
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.16.113.41:8848
+        file-extension: yaml
+        enabled: true
+      discovery:
+        server-addr: 172.16.113.41:8848

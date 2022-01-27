@@ -1,0 +1,26 @@
+postgres=# create database search;
+CREATE DATABASE
+postgres=# create user search with password 'search';
+CREATE ROLE
+postgres=# grant all privileges on database search to search;
+GRANT
+
+postgresql 创建表：
+create table "user"
+(
+	id varchar(30)
+		constraint user_pk
+			primary key,
+	name varchar(30),
+	age varchar(30),
+	email varchar(30)
+);
+
+comment on column "user".id is '主键';
+
+comment on column "user".name is '用户名';
+
+comment on column "user".age is '年龄';
+
+comment on column "user".email is '邮件';
+
